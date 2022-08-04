@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<tbody>
+  <%= render @item %>
+  <tr>
+    <td><%= link_to "Edit this item", edit_item_path(@item) %> | </td>
+    <td><%= link_to "Back to items", items_path %> | </td>
+    <td><%= link_to "Delete this item", item_path(@item), data: { turbo_method: "delete", turbo_confirm: "Are you sure?" } %></td>
+  </tr>
+</tbody>
